@@ -30,10 +30,10 @@ def RSYNC_BACKUP(backupset):
 
 def info_recoder(sql):
         conn = MySQLdb.connect(host   = 'remotehost' ,
-                               user   = 'gmonitor'      ,
-                               passwd = 'gmonitor'      ,
-                               db     = 'gmonitor'      ,
-                               port   = 7307 )
+                               user   = 'username'      ,
+                               passwd = 'password'      ,
+                               db     = 'dbname'      ,
+                               port   = port )
         cur = conn.cursor()
         cur.execute(sql)
         conn.commit()
